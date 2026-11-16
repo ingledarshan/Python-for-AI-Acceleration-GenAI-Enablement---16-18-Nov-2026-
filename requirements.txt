@@ -1,0 +1,39 @@
+# Shared environment for the eight GenAI lab notebooks.
+# Use Python 3.11.x; notebook metadata and examples target Python 3.11.
+
+# Jupyter runtime
+jupyterlab>=4,<5
+ipykernel>=6,<7
+
+# Notebooks 1, 2, 3, 4, 6, 7, and 8
+openai==2.37.0
+python-dotenv>=1,<2
+httpx>=0.27,<1
+
+# Hugging Face pipelines and the optional image-generation exercise (notebook 2)
+transformers>=4.46,<5
+torch>=2.2,<3
+torchvision>=0.17,<1
+diffusers>=0.30,<1
+accelerate>=1,<2
+safetensors>=0.4,<1
+
+# Retrieval and agentic-workflow notebooks (notebooks 3 and 4)
+langchain==0.3.27
+langchain-core==0.3.86
+langchain-community==0.3.31
+langchain-openai==0.3.35
+langchain-text-splitters==0.3.11
+pypdf>=6,<7
+requests>=2.31,<3
+
+# Evaluation, tracing, and optimization notebooks (notebooks 5-8)
+pandas==2.3.3
+mlflow==3.1.4
+pydantic>=2.7.4,<3
+opentelemetry-sdk>=1.27,<2
+tiktoken>=0.7,<1
+matplotlib>=3.8,<4
+
+# Python's zoneinfo uses the IANA database supplied by this package on Windows.
+tzdata>=2024.1
